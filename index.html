@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منيو منتجع قرية النخيل | Al-Nakheel Village Resort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="hero-header">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="resort-tag"><i class="fas fa-leaf"></i> ديجيتال منيو</span>
+            <h1>منتجع قرية النخيل</h1>
+            <h2 class="en-title">Al-Nakheel Village Resort</h2>
+            <p class="welcome-msg">نتمنى لكم قضاء أجمل الأوقات معنا</p>
+            
+            <div class="quick-actions">
+                <a href="tel:01030005707" class="action-chip phone">
+                    <i class="fas fa-phone-alt"></i> 01030005707
+                </a>
+                <a href="https://wa.me/201030005707" target="_blank" class="action-chip whatsapp">
+                    <i class="fab fa-whatsapp"></i> تواصل واتساب
+                </a>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="search-section">
+        <div class="search-bar-wrapper">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="ابحث عن وجبتك المفضلة (بيتزا، كريب، مشويات...)">
+        </div>
+    </div>
+
+    
+    <nav class="categories-slider" id="categoriesNav">
+        <button class="filter-btn active" data-category="all">✨ الكل</button>
+        <button class="filter-btn" data-category="pizza">🍕 البيتزا الإيطالي</button>
+        <button class="filter-btn" data-category="pasta">🍝 المكرونات</button>
+        <button class="filter-btn" data-category="crepe">🌯 الكريب الحادق</button>
+        <button class="filter-btn" data-category="white-pasta">🍲 وايت صوص</button>
+        <button class="filter-btn" data-category="grills">🥩 المشويات</button>
+        <button class="filter-btn" data-category="sandwiches">🥪 ساندوتشات</button>
+        <button class="filter-btn" data-category="fried-sandwiches">🍔 فرايد تشيكن</button>
+        <button class="filter-btn" data-category="fried-meals">🍗 وجبات فرايد</button>
+        <button class="filter-btn" data-category="tasa">🥘 الطاسات</button>
+        <button class="filter-btn" data-category="appetizers">🍟 ركن المقبلات</button>
+        <button class="filter-btn" data-category="burger">🍔 البرجر</button>
+        <button class="filter-btn" data-category="extras">➕ إضافات</button>
+    </nav>
+
+    
+    <main class="menu-wrapper" id="menuContainer">
+        
+    </main>
+
+    
+    <div class="floating-cart-bar" id="openCartBtn">
+        <div class="cart-left">
+            <div class="cart-icon-badge">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cartCount">0</span>
+            </div>
+            <span>سلة الطلبات</span>
+        </div>
+        <div class="cart-right">
+            <span id="cartTotalPreview">0 ج.م</span>
+            <i class="fas fa-chevron-left"></i>
+        </div>
+    </div>
+
+    
+    <div class="cart-modal-overlay" id="cartModal">
+        <div class="cart-modal-card">
+            <div class="modal-header">
+                <h3><i class="fas fa-receipt"></i> ملخص طلبك</h3>
+                <button class="close-modal-btn" id="closeCartBtn">&times;</button>
+            </div>
+            <div class="modal-body-items" id="cartItems">
+                <p class="empty-text">السلة فارغة، اختر ما تحب من المنيو!</p>
+            </div>
+            <div class="modal-footer">
+                <div class="total-calculation">
+                    <span>الإجمالي الكلي:</span>
+                    <span id="cartTotal">0 ج.م</span>
+                </div>
+                <div class="customer-inputs">
+                    <input type="text" id="customerName" placeholder="اسمك الكريم (اختياري)">
+                    <input type="text" id="customerAddress" placeholder="رقم الشاليه / الطاولة أو العنوان">
+                </div>
+                <button class="confirm-whatsapp-btn" id="sendWhatsappBtn">
+                    <i class="fab fa-whatsapp"></i> إرسال الطلب عبر الواتساب
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="app-footer">
+        <p>منتجع قرية النخيل - Al-Nakheel Village Resort</p>
+        <p class="signature">Made By ENG : Zakaria Bayood</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <footer class="app-footer">
+        <div class="footer-brand">منتجع قرية النخيل - Al-Nakheel Village Resort</div>
+        
+        <div class="footer-contacts">
+            <a href="tel:01140443978"><i class="fas fa-phone-alt"></i> 01140443978</a>
+            <a href="mailto:zakaria.mohamed1432@gmail.com"><i class="fas fa-envelope"></i> zakaria.mohamed1432@gmail.com</a>
+        </div>
+
+        <div class="dev-signature">
+            <span>Designed & Developed with ❤️ by</span>
+            <strong>Eng. Zakaria Bayood</strong>
+        </div>
+    </footer>
+</body>
+</html>
